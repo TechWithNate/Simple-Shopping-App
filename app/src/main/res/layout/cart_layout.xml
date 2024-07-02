@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/product_img"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dual Shock Double Game Controller Pad With Shock Effect - Black"
+        android:layout_toEndOf="@+id/product_img"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/product_name"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GHC 95,000.00"
+        android:layout_toEndOf="@+id/product_img"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/product_name"
+        android:textStyle="bold"
+        android:id="@+id/product_price"
+        android:layout_marginTop="5dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_img"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove"
+            android:id="@+id/remove_btn"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:cornerRadius="2dp"
+            android:id="@+id/add_btn"
+            android:text="-"
+            android:textColor="@color/white"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/add_btn"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/product_qty"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:cornerRadius="2dp"
+            android:text="-"
+            android:id="@+id/sub_btn"
+            android:layout_toStartOf="@+id/product_qty"
+            android:textColor="@color/white"
+            android:layout_marginEnd="20dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
